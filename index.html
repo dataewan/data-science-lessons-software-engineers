@@ -11988,9 +11988,7 @@ Like peer review in science.</p>
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
-
-<span class="k">def</span> <span class="nf">f1score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f1score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;F1 score is given by this formula.</span>
 
 <span class="sd">    F1 = 2 * (precision * recall) / (precision + recall)</span>
@@ -12017,7 +12015,8 @@ Like peer review in science.</p>
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
+
 <span class="k">assert</span> <span class="n">f1score</span><span class="p">(</span>
     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="p">)</span> <span class="o">==</span> <span class="mf">0.8</span>
@@ -12033,13 +12032,21 @@ Like peer review in science.</p>
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-engineering">Data engineering<a class="anchor-link" href="#Data-engineering">&#182;</a></h1><p>Best way to get high quality data</p>
-<p>Very underrated task. You may be used to just complaining about it not being right. <strong>Invest</strong> in this instead.</p>
+<p>Very underrated task. I used to complain about this not being right. <strong>Invest</strong> in this instead.</p>
 
 </div>
 </div>
@@ -12048,7 +12055,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Making-schemas-and-data-models">Making schemas and data models<a class="anchor-link" href="#Making-schemas-and-data-models">&#182;</a></h3><p>Star, snowflake schemas. Normalised, denormalised.</p>
+<h2 id="Don't-get-put-off-by-language">Don't get put off by language<a class="anchor-link" href="#Don't-get-put-off-by-language">&#182;</a></h2><p>Star, snowflake schemas. Normalised, denormalised.</p>
 <p>You have the knowledge to do this.</p>
 
 </div>
@@ -12058,7 +12065,8 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h3><p>Productionise your tasks.</p>
+<h2 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h2><p>Productionise your tasks.</p>
+<p>It might be in python already.</p>
 
 </div>
 </div>
@@ -12087,7 +12095,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-in">Data in<a class="anchor-link" href="#Data-in">&#182;</a></h2><p>Knesis (Kafka)</p>
+<h2 id="Data-in">Data in<a class="anchor-link" href="#Data-in">&#182;</a></h2><p>Kinesis (Kafka)</p>
 <p>Glue</p>
 
 </div>
@@ -12111,7 +12119,6 @@ Like peer review in science.</p>
 <h2 id="Data-processing">Data processing<a class="anchor-link" href="#Data-processing">&#182;</a></h2><p>EC2, EMR</p>
 <p>Lambda</p>
 <p>Sagemaker</p>
-<p>Deep learning AMI</p>
 
 </div>
 </div>
@@ -12130,16 +12137,41 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Deployment">Deployment<a class="anchor-link" href="#Deployment">&#182;</a></h2><p>concept drift</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>retraining models shouldn't be difficult. this should be a low cost operation</p>
+<p>shouldn't break things</p>
 <p>taking idea from continous deployment/delivery</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>whole pipeline should repeat</p>
-<p>danny logging metrics like F1, precision/recall score to grafana</p>
-<p>Ravelin showing that they do things like log the most important features.</p>
 <p>Automate deployment</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>danny logging metrics like F1, precision/recall score to grafana</p>
+<p>Ravelin showing that they do things like log the most important features.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12155,8 +12187,9 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="All-the-experience">All the experience<a class="anchor-link" href="#All-the-experience">&#182;</a></h2><p>Pragmatic programmer</p>
+<h2 id="All-the-experience">All the experience<a class="anchor-link" href="#All-the-experience">&#182;</a></h2><p>Pragmatic programmer, Clean Code</p>
 <p><a href="https://blog.codinghorror.com/code-smells/">code smells</a>. keeping code modular</p>
+<p><a href="https://github.com/braydie/HowToBeAProgrammer">https://github.com/braydie/HowToBeAProgrammer</a></p>
 <p>Get away from notebooks</p>
 
 </div>
