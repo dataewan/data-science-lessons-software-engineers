@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="29.963 39.326 371.41 198.502" xmlns="http://www.w3.org/2000/svg">
+  <text x="181.024" y="80.524" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;">build</text>
+  <text x="295.88" y="180.399" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;">measure</text>
+  <text x="43.695" y="196.629" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;">learn</text>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 99.875 109.863"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 142.946 76.155"/>
+  <path style="stroke: rgb(0, 0, 0); fill: none;" d="M 73.034 164.794 C 58.798 145.219 143.061 65.389 155.431 82.397"/>
+  <path style="stroke: rgb(0, 0, 0); fill: none;" d="M 247.815 74.282 C 258.245 64.654 350.779 130.732 339.575 141.074"/>
+  <path style="stroke: rgb(0, 0, 0); fill: none;" d="M 298.377 198.502 C 300.395 226.756 108.641 231.952 107.366 214.108"/>
+</svg>
