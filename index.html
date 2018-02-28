@@ -11970,6 +11970,7 @@ Like peer review in science.</p>
 <p>mocking anything that has already been tested</p>
 <p><a href="https://testingpodcast.com/33-katharine-jarmul-testing-in-data-science/">https://testingpodcast.com/33-katharine-jarmul-testing-in-data-science/</a></p>
 <p><a href="http://www.tdda.info/">http://www.tdda.info/</a></p>
+<p><a href="https://www.eecs.tufts.edu/~dsculley/papers/ml_test_score.pdf">https://www.eecs.tufts.edu/~dsculley/papers/ml_test_score.pdf</a></p>
 <p><a href="https://smile.amazon.co.uk/Testing-Python-Applying-Unit-Acceptance-ebook/dp/B00LJV2GXI/ref=sr_1_1?ie=UTF8&amp;qid=1519759535&amp;sr=8-1&amp;keywords=testing+python+david+sale">https://smile.amazon.co.uk/Testing-Python-Applying-Unit-Acceptance-ebook/dp/B00LJV2GXI/ref=sr_1_1?ie=UTF8&amp;qid=1519759535&amp;sr=8-1&amp;keywords=testing+python+david+sale</a></p>
 
 </div>
@@ -12037,7 +12038,8 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2>
+<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2><p>For example, don't unit test sklearn</p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -12055,7 +12057,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Don't-get-put-off-by-language">Don't get put off by language<a class="anchor-link" href="#Don't-get-put-off-by-language">&#182;</a></h2><p>Star, snowflake schemas. Normalised, denormalised.</p>
+<h2 id="Don't-get-put-off-by-nomenclature">Don't get put off by nomenclature<a class="anchor-link" href="#Don't-get-put-off-by-nomenclature">&#182;</a></h2><p>Star, snowflake schemas. Normalised, denormalised.</p>
 <p>You have the knowledge to do this.</p>
 
 </div>
@@ -12066,7 +12068,7 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h2><p>Productionise your tasks.</p>
-<p>It might be in python already.</p>
+<p>It might be in python already</p>
 
 </div>
 </div>
@@ -12106,7 +12108,7 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-storage">Data storage<a class="anchor-link" href="#Data-storage">&#182;</a></h2><p>s3</p>
-<p>Parquet, athena</p>
+<p>Parquet, Athena</p>
 <p>Redshift, RDS</p>
 
 </div>
@@ -12136,7 +12138,46 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Deployment">Deployment<a class="anchor-link" href="#Deployment">&#182;</a></h2><p>concept drift</p>
+<h2 id="Deployment">Deployment<a class="anchor-link" href="#Deployment">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Concept drift</em></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Retraining models shouldn't be difficult. This should be a low cost operation</p>
+<p>Retraining shouldn't break anything</p>
+<p>Stealing idea from continous deployment/delivery</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Repeatable,-automated-pipelines">Repeatable, automated pipelines<a class="anchor-link" href="#Repeatable,-automated-pipelines">&#182;</a></h2><p>Whole pipeline should be repeatable</p>
+<p>Automate deployment, retraining, evaluation</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Logging-deployment-performance">Logging deployment performance<a class="anchor-link" href="#Logging-deployment-performance">&#182;</a></h2><p><img src="https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67" alt="grafana dashboard"></p>
+<p><em>developer dashboard</em></p>
 
 </div>
 </div>
@@ -12145,29 +12186,9 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>retraining models shouldn't be difficult. this should be a low cost operation</p>
-<p>shouldn't break things</p>
-<p>taking idea from continous deployment/delivery</p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>whole pipeline should repeat</p>
-<p>Automate deployment</p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>danny logging metrics like F1, precision/recall score to grafana</p>
-<p>Ravelin showing that they do things like log the most important features.</p>
+<p>These dashboards not just for developers!</p>
+<p>My colleague Danny logs model performance metrics like AUC or F1 to grafana</p>
+<p>Very good talk from <a href="https://www.ravelin.com/">Ravelin</a> where they talk about logging things like relative importance of features to say if we can use retrained model.</p>
 
 </div>
 </div>
@@ -12176,9 +12197,21 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Microservices">Microservices<a class="anchor-link" href="#Microservices">&#182;</a></h2><p>Like lego</p>
-<p>Each thing should do one thing and do it well</p>
-<p>Again from Ravelin, ensembling these together to make a meta prediction</p>
+<h2 id="Microservices">Microservices<a class="anchor-link" href="#Microservices">&#182;</a></h2><p>(I'm going to get this wrong)</p>
+<p>Each job is a container.</p>
+<p>Each container should do one thing and do it well. Connect together like Lego.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again from Ravelin, I love this idea.</p>
+<p>They have a library of model components.</p>
+<p>Ensemble them together to make classifiers.</p>
+<p><img src="./library.svg" alt='library' style='width: 500px'/></p>
 
 </div>
 </div>
@@ -12187,10 +12220,47 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="All-the-experience">All the experience<a class="anchor-link" href="#All-the-experience">&#182;</a></h2><p>Pragmatic programmer, Clean Code</p>
-<p><a href="https://blog.codinghorror.com/code-smells/">code smells</a>. keeping code modular</p>
+<h2 id="All-the-experience">All the experience<a class="anchor-link" href="#All-the-experience">&#182;</a></h2><p>Data science is very young field. We can learn from experienced programmers.</p>
+<p>Find an experienced programmer, see what they get grumpy about</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Code-smells">Code smells<a class="anchor-link" href="#Code-smells">&#182;</a></h2><p><a href="https://blog.codinghorror.com/code-smells/">code smells</a></p>
+<p>They've seen these before. These things have names!</p>
+<ul>
+<li>Long Parameter List</li>
+<li>Don't repeat yourself!</li>
+<li>Conditional Complexity</li>
+<li>Speculative Generality</li>
+<li>Shotgun Surgery</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Getting-away-from-notebooks">Getting away from notebooks<a class="anchor-link" href="#Getting-away-from-notebooks">&#182;</a></h2><p>Data scientists love notebooks (jupyter)</p>
+<p>A great experience is watching an engineer hate them</p>
+<p>An even better experience is watching an engineer say: <em>"they are a great tool for collaboration and experimentation"</em></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://smile.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1519841835&amp;sr=1-1&amp;keywords=pragmatic+programmer&amp;dpID=41BKx1AxQWL&amp;preST=_SX218_BO1,204,203,200_QL40_&amp;dpSrc=srch">https://smile.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1519841835&amp;sr=1-1&amp;keywords=pragmatic+programmer&amp;dpID=41BKx1AxQWL&amp;preST=_SX218_BO1,204,203,200_QL40_&amp;dpSrc=srch</a></p>
 <p><a href="https://github.com/braydie/HowToBeAProgrammer">https://github.com/braydie/HowToBeAProgrammer</a></p>
-<p>Get away from notebooks</p>
+<p><a href="http://opiateforthemass.es/articles/why-i-dont-like-jupyter-fka-ipython-notebook/">http://opiateforthemass.es/articles/why-i-dont-like-jupyter-fka-ipython-notebook/</a></p>
 
 </div>
 </div>

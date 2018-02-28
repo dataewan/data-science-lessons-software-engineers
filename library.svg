@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 497.106 434.153" xmlns="http://www.w3.org/2000/svg">
+  <rect x="72.358" width="20.26" height="49.204" y="46.672" style="fill: rgb(217, 0, 0);"/>
+  <text x="16.643" y="31.838" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;">Library</text>
+  <rect x="106.005" width="20.26" height="49.204" y="46.672" style="fill: rgb(217, 130, 0);"/>
+  <rect x="139.652" width="20.26" height="49.204" y="46.672" style="fill: rgb(159, 217, 0);"/>
+  <rect x="173.299" width="20.26" height="49.204" y="46.672" style="fill: rgb(47, 217, 0);"/>
+  <rect x="206.946" width="20.26" height="49.204" y="46.672" style="fill: rgb(0, 217, 181);"/>
+  <rect x="272.793" y="224.313" width="20.26" height="49.204" transform="matrix(1.000001, 0, 0, 1, -32.201484, -177.641495)" style="fill: rgb(0, 180, 217);"/>
+  <rect x="274.24" width="20.26" height="49.204" y="46.672" style="fill: rgb(0, 108, 217);"/>
+  <rect x="307.887" width="20.26" height="49.204" y="46.672" style="fill: rgb(50, 0, 217);"/>
+  <rect x="341.534" width="20.26" height="49.204" y="46.672" style="fill: rgb(126, 0, 217);"/>
+  <rect x="375.181" width="20.26" height="49.204" y="46.672" style="fill: rgb(217, 0, 159);"/>
+  <text x="16.643" y="31.838" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;" transform="matrix(1, 0, 0, 0.999999, 1.680267, 226.130449)">Model A</text>
+  <text x="375.776" y="260.139" style="white-space: pre; fill: rgb(51, 51, 51); font-size: 24px;">Model B</text>
+  <g transform="matrix(1, 0, 0, 1, 0, -3.616973)">
+    <rect x="52.823" width="20.26" height="49.204" y="285.094" style="fill: rgb(217, 0, 0);"/>
+    <rect x="29.669" width="20.26" height="49.204" y="285.094" style="fill: rgb(0, 217, 181);"/>
+    <rect x="75.977" width="20.26" height="49.204" y="285.094" style="fill: rgb(50, 0, 217);"/>
+  </g>
+  <g>
+    <rect x="405.934" width="20.26" height="49.204" y="281.476" style="fill: rgb(159, 217, 0);"/>
+    <rect x="382.417" y="281.477" width="20.26" height="49.204" style="fill: rgb(0, 180, 217);"/>
+    <rect x="429.45" width="20.26" height="49.204" y="281.477" style="fill: rgb(217, 0, 159);"/>
+  </g>
+  <g>
+    <line style="stroke: rgb(0, 0, 0);" x1="37.627" y1="335.745" x2="49.928" y2="381.331"/>
+    <line style="stroke: rgb(0, 0, 0);" x1="62.229" y1="335.745" x2="62.229" y2="377.72"/>
+    <line style="stroke: rgb(0, 0, 0);" x1="75.615" y1="381.332" x2="87.916" y2="335.745" transform="matrix(-1, 0, 0, -1, 163.531008, 717.07707)"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 354.015778, -0.361971)">
+    <line style="stroke: rgb(0, 0, 0);" x1="37.627" y1="335.745" x2="49.928" y2="381.331"/>
+    <line style="stroke: rgb(0, 0, 0);" x1="62.229" y1="335.745" x2="62.229" y2="377.72"/>
+    <line style="stroke: rgb(0, 0, 0);" x1="75.615" y1="381.332" x2="87.916" y2="335.745" transform="matrix(-1, 0, 0, -1, 163.531008, 717.07707)"/>
+  </g>
+  <ellipse style="fill: rgb(216, 216, 216);" transform="matrix(-0.682319, 0.731056, -0.731059, -0.682318, 441.44075, 616.303546)" cx="99.132" cy="426.194" rx="14.847" ry="14.847"/>
+  <ellipse style="fill: rgb(216, 216, 216);" transform="matrix(-0.682318, 0.731056, -0.73106, -0.682318, 796.723772, 616.303124)" cx="99.132" cy="426.194" rx="14.847" ry="14.847"/>
+</svg>
