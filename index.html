@@ -11949,6 +11949,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Code-review">Code review<a class="anchor-link" href="#Code-review">&#182;</a></h2><p>This is brilliant.
+Any easy thing to appreciate.
 Like peer review in science.</p>
 <p>Agree the rules beforehand. PEP-8.</p>
 <p>Peer review with both data scientists and engineers if you can.</p>
@@ -11990,10 +11991,10 @@ Like peer review in science.</p>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f1score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
@@ -12017,22 +12018,17 @@ Like peer review in science.</p>
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
 
-<span class="k">assert</span> <span class="n">f1score</span><span class="p">(</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="p">)</span> <span class="o">==</span> <span class="mf">0.8</span>
-
+<span class="k">assert</span> <span class="n">f1score</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.8</span>
 <span class="k">assert</span> <span class="n">f1score</span><span class="p">([</span><span class="s1">&#39;None&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;None&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="n">pytest</span><span class="o">.</span><span class="n">approx</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-
 <span class="k">assert</span> <span class="n">f1score</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.25</span>
-
 <span class="k">assert</span> <span class="n">f1score</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.4</span>
 </pre></div>
 
@@ -12045,7 +12041,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2><p>For example, don't unit test sklearn</p>
+<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2><p>For example, don't unit test sklearn modules</p>
 
 </div>
 </div>
@@ -12087,7 +12083,7 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h2><p>Productionise your tasks.</p>
-<p>It might be in python already</p>
+<p>Many ETL technologies use python already.</p>
 
 </div>
 </div>
@@ -12116,38 +12112,6 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-in">Data in<a class="anchor-link" href="#Data-in">&#182;</a></h2><p>Kinesis (Kafka)</p>
-<p>Glue</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-storage">Data storage<a class="anchor-link" href="#Data-storage">&#182;</a></h2><p>s3</p>
-<p>Parquet, Athena</p>
-<p>Redshift, RDS</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-processing">Data processing<a class="anchor-link" href="#Data-processing">&#182;</a></h2><p>EC2, EMR</p>
-<p>Lambda</p>
-<p>Sagemaker</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://aws.amazon.com/big-data/">https://aws.amazon.com/big-data/</a></p>
 
 </div>
@@ -12157,7 +12121,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Deployment">Deployment<a class="anchor-link" href="#Deployment">&#182;</a></h2>
+<h1 id="Deployment">Deployment<a class="anchor-link" href="#Deployment">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -12195,9 +12159,10 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Retraining models shouldn't be difficult. This should be a low cost operation</p>
-<p>Retraining shouldn't break anything</p>
-<p>Stealing idea from continous deployment/delivery</p>
+<p>One way to avoid concept drift is to retrain models regularly, when they get stale.</p>
+<p>Retraining models shouldn't be difficult. This should be a low cost operation.</p>
+<p>Retraining shouldn't break anything.</p>
+<p>We can steal ideas from continous deployment/delivery.</p>
 
 </div>
 </div>
@@ -12206,8 +12171,8 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Repeatable,-automated-pipelines">Repeatable, automated pipelines<a class="anchor-link" href="#Repeatable,-automated-pipelines">&#182;</a></h2><p>Whole pipeline should be repeatable</p>
-<p>Automate deployment, retraining, evaluation</p>
+<h2 id="Repeatable,-automated-pipelines">Repeatable, automated pipelines<a class="anchor-link" href="#Repeatable,-automated-pipelines">&#182;</a></h2><p>Whole pipeline should be completely repeatable.</p>
+<p>Automate deployment, retraining, evaluation.</p>
 
 </div>
 </div>
@@ -12237,9 +12202,9 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Microservices">Microservices<a class="anchor-link" href="#Microservices">&#182;</a></h2><p>(I'm going to get this wrong)</p>
-<p>Each job is a container.</p>
+<h1 id="Microservices">Microservices<a class="anchor-link" href="#Microservices">&#182;</a></h1><p>Each job is a container.</p>
 <p>Each container should do one thing and do it well. Connect together like Lego.</p>
+<p>Components can be parts of data pipeline, presentation of results, or parts of the model.</p>
 
 </div>
 </div>
@@ -12260,7 +12225,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="All-the-experience">All the experience<a class="anchor-link" href="#All-the-experience">&#182;</a></h2><p>Data science is very young field. We can learn from experienced programmers.</p>
+<h1 id="Find-what-programmers-get-grumpy-about">Find what programmers get grumpy about<a class="anchor-link" href="#Find-what-programmers-get-grumpy-about">&#182;</a></h1><p>Data science is very young field. We can learn from experienced programmers.</p>
 <p>Find an experienced programmer, see what they get grumpy about</p>
 
 </div>
@@ -12301,37 +12266,6 @@ Like peer review in science.</p>
 <p><a href="https://smile.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1519841835&amp;sr=1-1&amp;keywords=pragmatic+programmer&amp;dpID=41BKx1AxQWL&amp;preST=_SX218_BO1,204,203,200_QL40_&amp;dpSrc=srch">https://smile.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1519841835&amp;sr=1-1&amp;keywords=pragmatic+programmer&amp;dpID=41BKx1AxQWL&amp;preST=_SX218_BO1,204,203,200_QL40_&amp;dpSrc=srch</a></p>
 <p><a href="https://github.com/braydie/HowToBeAProgrammer">https://github.com/braydie/HowToBeAProgrammer</a></p>
 <p><a href="http://opiateforthemass.es/articles/why-i-dont-like-jupyter-fka-ipython-notebook/">http://opiateforthemass.es/articles/why-i-dont-like-jupyter-fka-ipython-notebook/</a></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Agile">Agile<a class="anchor-link" href="#Agile">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Make things smaller, be customer centric, iterate. All excellent values.</p>
-<p>Also, isn't this just science?</p>
-<p><img src="bml.svg" alt="build measure learn"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-meetings">The meetings<a class="anchor-link" href="#The-meetings">&#182;</a></h2><p>I thought that agile was a system of meetings.</p>
-<p>It can be, but the meetings are useful.</p>
-<p>Don't sit there with your laptop, engage with them.</p>
-<p>If it genuinely isn't useful then bring it up in the retro.</p>
 
 </div>
 </div>
@@ -12384,7 +12318,8 @@ Together we build super cool data driven products that scale.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Don't-have-time-for,-but-two-very-good-things">Don't have time for, but two very good things<a class="anchor-link" href="#Don't-have-time-for,-but-two-very-good-things">&#182;</a></h2><p>Version control</p>
+<h2 id="Things-that-I-wanted-to-cover,-but-didn't-have-time-for">Things that I wanted to cover, but didn't have time for<a class="anchor-link" href="#Things-that-I-wanted-to-cover,-but-didn't-have-time-for">&#182;</a></h2><p>Agile</p>
+<p>Version control</p>
 <p>Debugger</p>
 
 </div>
@@ -12394,9 +12329,10 @@ Together we build super cool data driven products that scale.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Get-better-at-Python">Get better at Python<a class="anchor-link" href="#Get-better-at-Python">&#182;</a></h2><p>Two of my favourites</p>
-<p><a href="https://smile.amazon.co.uk/Python-Tricks-Buffet-Awesome-Features-ebook/dp/B0785Q7GSY/ref=sr_1_1?ie=UTF8&amp;qid=1519844374&amp;sr=8-1&amp;keywords=dan+bader">Python tips</a></p>
+<h2 id="Python-resources">Python resources<a class="anchor-link" href="#Python-resources">&#182;</a></h2><p><a href="https://smile.amazon.co.uk/Python-Tricks-Buffet-Awesome-Features-ebook/dp/B0785Q7GSY/ref=sr_1_1?ie=UTF8&amp;qid=1519844374&amp;sr=8-1&amp;keywords=dan+bader">Python tips</a></p>
 <p><a href="https://talkpython.fm/">Talk Python to me podcast</a></p>
+<p><a href="http://docs.python-guide.org/en/latest/">Hitchhiker's guide to python</a></p>
+<p><a href="https://www.pythonweekly.com/">Python weekly newsletter</a></p>
 
 </div>
 </div>
