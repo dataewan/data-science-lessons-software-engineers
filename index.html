@@ -11905,7 +11905,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-can-data-scientists-learn-from-engineers?">What can data scientists learn from engineers?<a class="anchor-link" href="#What-can-data-scientists-learn-from-engineers?">&#182;</a></h1><h3 id="Or:-Things-that-I-am-still-no-good-at">Or: <em>Things that I am still no good at</em><a class="anchor-link" href="#Or:-Things-that-I-am-still-no-good-at">&#182;</a></h3><p>Ewan Nicolson</p>
+<h1 id="What-can-data-scientists-learn-from-engineers?">What can data scientists learn from engineers?<a class="anchor-link" href="#What-can-data-scientists-learn-from-engineers?">&#182;</a></h1><h3 id="Or:-Things-that-I-am-still-bad-at,-but-trying-to-improve">Or: <em>Things that I am still bad at, but trying to improve</em><a class="anchor-link" href="#Or:-Things-that-I-am-still-bad-at,-but-trying-to-improve">&#182;</a></h3><p>Ewan Nicolson</p>
 <p><a href="http://dataewan.github.io/">dataewan.github.io</a></p>
 
 </div>
@@ -11940,7 +11940,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="In-the-order-I-was-convinced-of-these-values">In the order I was convinced of these values<a class="anchor-link" href="#In-the-order-I-was-convinced-of-these-values">&#182;</a></h1>
+<h1 id="In-the-rough-order-I-was-convinced-of-these-values">In the rough order I was convinced of these values<a class="anchor-link" href="#In-the-rough-order-I-was-convinced-of-these-values">&#182;</a></h1>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11948,10 +11948,19 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Code-review">Code review<a class="anchor-link" href="#Code-review">&#182;</a></h2><p>This is brilliant.
-Any easy thing to appreciate.
+<h1 id="Code-review">Code review<a class="anchor-link" href="#Code-review">&#182;</a></h1><p>A systematic way of getting your code checked by others.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Code review is brilliant.
+Excellent learning experience.
 Like peer review in science.</p>
-<p>Agree the rules beforehand. PEP-8.</p>
+<h3 id="Pointers">Pointers<a class="anchor-link" href="#Pointers">&#182;</a></h3><p>Agree the rules beforehand. PEP-8.</p>
 <p>Peer review with both data scientists and engineers if you can.</p>
 
 </div>
@@ -11972,12 +11981,12 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Testing">Testing<a class="anchor-link" href="#Testing">&#182;</a></h1><p>I was very reluctant about testing.</p>
-<blockquote><p>What if it is complicated, and I need to make a programme to find the answer?</p>
-</blockquote>
-<p>and</p>
-<blockquote><p>What if it is a process that is non-deterministic?</p>
-</blockquote>
+<h1 id="Testing">Testing<a class="anchor-link" href="#Testing">&#182;</a></h1><p>I was initially very reluctant about testing.</p>
+<ul>
+<li>What if the answer is complicated, and I need to make a programme to find the answer?</li>
+<li>What if it is a process that is non-deterministic like a random forest?</li>
+<li>Isn't this a lot of overhead?</li>
+</ul>
 <p>Couple of gateways into testing:</p>
 
 </div>
@@ -11987,7 +11996,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="These-are-the-same-tests-you-do-on-paper">These are the same tests you do on paper<a class="anchor-link" href="#These-are-the-same-tests-you-do-on-paper">&#182;</a></h2><p>Simple values</p>
+<h2 id="These-are-the-same-tests-you-do-on-paper">These are the same tests you do on paper<a class="anchor-link" href="#These-are-the-same-tests-you-do-on-paper">&#182;</a></h2><p>Use simple values</p>
 
 </div>
 </div>
@@ -12041,7 +12050,8 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2><p>For example, don't unit test sklearn modules</p>
+<h2 id="Mock-anything-that-has-already-been-tested">Mock anything that has already been tested<a class="anchor-link" href="#Mock-anything-that-has-already-been-tested">&#182;</a></h2><p>For example, don't unit test sklearn modules.</p>
+<p>Only test your own logic, as that's the most likely place for problems to occur.</p>
 
 </div>
 </div>
@@ -12073,7 +12083,7 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Don't-get-put-off-by-nomenclature">Don't get put off by nomenclature<a class="anchor-link" href="#Don't-get-put-off-by-nomenclature">&#182;</a></h2><p>Star, snowflake schemas. Normalised, denormalised.</p>
-<p>You have the knowledge to do this.</p>
+<p>You have the knowledge to do this. If you write SQL then you understand this.</p>
 
 </div>
 </div>
@@ -12082,7 +12092,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h2><p>Productionise your tasks.</p>
+<h2 id="Understand-how-ETL-works">Understand how ETL works<a class="anchor-link" href="#Understand-how-ETL-works">&#182;</a></h2><p>Probably the biggest gain you get for lowest effort. Productionise your pipelines.</p>
 <p>Many ETL technologies use python already.</p>
 
 </div>
@@ -12102,7 +12112,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="AWS">AWS<a class="anchor-link" href="#AWS">&#182;</a></h1><p>Have some knowledge of the AWS tools available to you.</p>
+<h1 id="AWS">AWS<a class="anchor-link" href="#AWS">&#182;</a></h1><p>Have knowledge of the AWS tools available to you.</p>
 <p>I'm sure the rest are very good too. I like bigquery.</p>
 
 </div>
@@ -12129,6 +12139,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>First the concept of concept drift.</p>
 <p><img src="./step1.png" alt="step1"></p>
 <p><em>concept drift</em></p>
 
@@ -12139,6 +12150,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>You have a nice model, trained well, evaluating correctly.</p>
 <p><img src="./step2.png" alt="step1"></p>
 <p><em>concept drift</em></p>
 
@@ -12149,6 +12161,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Then the environment changes.</p>
 <p><img src="./step3.png" alt="step1"></p>
 <p><em>concept drift</em></p>
 
@@ -12159,10 +12172,9 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One way to avoid concept drift is to retrain models regularly, when they get stale.</p>
-<p>Retraining models shouldn't be difficult. This should be a low cost operation.</p>
-<p>Retraining shouldn't break anything.</p>
-<p>We can steal ideas from continous deployment/delivery.</p>
+<p>One way to avoid concept drift is to retrain models regularly, before they get stale.</p>
+<p>You want this to be low cost operation.</p>
+<p>Stealing ideas from continuous deployment/delivery</p>
 
 </div>
 </div>
@@ -12192,8 +12204,13 @@ Like peer review in science.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>These dashboards not just for software engineers!</p>
-<p>My colleague Danny logs model performance metrics like AUC or F1 to grafana</p>
-<p>Very good talk from <a href="https://www.ravelin.com/">Ravelin</a> where they talk about logging things like relative importance of features to say if we can use retrained model.</p>
+<p>This idea scales well. You can also log:</p>
+<ul>
+<li>Training metrics like AUC, RMSE</li>
+<li>Feature importances; what are the most relevant predictors in the model</li>
+<li>Performance on evaluation data</li>
+<li>Distribution of predictions</li>
+</ul>
 
 </div>
 </div>
@@ -12213,7 +12230,7 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Again from Ravelin, I love this idea.</p>
+<p>Excellent talk from <a href="https://www.ravelin.com/">Ravelin</a> who do fraud detection. I love this idea.</p>
 <p>They have a library of model components.</p>
 <p>Ensemble them together to make classifiers.</p>
 <p><img src="./library.svg" alt='library' style='width: 500px'/></p>
@@ -12244,6 +12261,7 @@ Like peer review in science.</p>
 <li>Speculative Generality</li>
 <li>Shotgun Surgery</li>
 </ul>
+<p>I read this list and I recognised things that I got wrong in my own work.</p>
 
 </div>
 </div>
@@ -12274,11 +12292,16 @@ Like peer review in science.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-can-engineers-learn-from-data-scientists?">What can engineers learn from data scientists?<a class="anchor-link" href="#What-can-engineers-learn-from-data-scientists?">&#182;</a></h2><p>Being data aware. Analysis and stats.</p>
-<p>Dealing with uncertainty.</p>
-<p>Knowing about the domain applications of our work.</p>
-<p>If a data scientist who knows engineering is awesome, then an engineer who knows data science is too.
-Together we build super cool data driven products that scale.</p>
+<h2 id="What-can-engineers-learn-from-data-scientists?">What can engineers learn from data scientists?<a class="anchor-link" href="#What-can-engineers-learn-from-data-scientists?">&#182;</a></h2><ul>
+<li><p>Being data aware. Analysis and stats.</p>
+</li>
+<li><p>Dealing with uncertainty.</p>
+</li>
+<li><p>Knowing about the domain applications of our work.</p>
+</li>
+<li><p>If a data scientist who knows engineering is awesome, then an engineer who knows data science is too. Together we build super cool data driven products that scale.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -12329,7 +12352,7 @@ Together we build super cool data driven products that scale.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-resources">Python resources<a class="anchor-link" href="#Python-resources">&#182;</a></h2><p><a href="https://smile.amazon.co.uk/Python-Tricks-Buffet-Awesome-Features-ebook/dp/B0785Q7GSY/ref=sr_1_1?ie=UTF8&amp;qid=1519844374&amp;sr=8-1&amp;keywords=dan+bader">Python tips</a></p>
+<h2 id="Python-resources-that-have-really-helped-me">Python resources that have really helped me<a class="anchor-link" href="#Python-resources-that-have-really-helped-me">&#182;</a></h2><p><a href="https://smile.amazon.co.uk/Python-Tricks-Buffet-Awesome-Features-ebook/dp/B0785Q7GSY/ref=sr_1_1?ie=UTF8&amp;qid=1519844374&amp;sr=8-1&amp;keywords=dan+bader">Python tips</a></p>
 <p><a href="https://talkpython.fm/">Talk Python to me podcast</a></p>
 <p><a href="http://docs.python-guide.org/en/latest/">Hitchhiker's guide to python</a></p>
 <p><a href="https://www.pythonweekly.com/">Python weekly newsletter</a></p>
